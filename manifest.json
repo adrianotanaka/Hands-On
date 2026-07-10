@@ -1,9 +1,9 @@
 {
-  "workshoptitle": "Explore PDFs de Forma Simples com a Técnica de Busca Semântica",
+  "workshoptitle": "Criação de um Fluxo de Dados com AIDP",
   "help": " ",
 	"tutorials": [
     {
-      "title": "[OBRIGATÓRIO] Configuração do Ambiente de Laboratório",
+      "title": "Configuração do Ambiente de Laboratório",
       "filename": "create-compartments/create-compartments.md"
     },
     {
