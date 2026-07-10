@@ -27,36 +27,7 @@ Ao concluir este laboratório, você será capaz de:
 
 A arquitetura do laboratório combina recursos de infraestrutura da Oracle Cloud, uma origem PostgreSQL e os recursos de processamento e armazenamento do Oracle AI Data Platform.
 
-```mermaid
-flowchart LR
-    subgraph OCI["Oracle Cloud Infrastructure"]
-        COMP["Compartimento do laboratório"]
-
-        subgraph VCN["Virtual Cloud Network (VCN)"]
-            PG_SRC[("PostgreSQL — origem OLTP")]
-            PG_GOLD[("PostgreSQL — schema Gold")]
-        end
-
-        subgraph AIDP["Oracle AI Data Platform Workbench"]
-            NB1["Notebook 01<br/>Ingestão JDBC"]
-            BRONZE[("Camada Bronze<br/>Tabelas Delta")]
-            NB2["Notebook 02<br/>Transformações PySpark"]
-            SILVER[("Camada Silver<br/>Dimensões e fatos Delta")]
-            NB3["Notebook 03<br/>Agregações e publicação"]
-        end
-
-        COMP -. organiza .-> VCN
-        COMP -. organiza .-> AIDP
-    end
-
-    PG_SRC -- "Leitura JDBC" --> NB1
-    NB1 --> BRONZE
-    BRONZE --> NB2
-    NB2 --> SILVER
-    SILVER --> NB3
-    NB3 -- "Escrita JDBC" --> PG_GOLD
-    PG_GOLD --> CONSUMO["Aplicações e ferramentas analíticas"]
-```
+![Arquitetura do laboratório AIDP](images/arquitetura-aidp.png)
 
 O PostgreSQL disponibiliza as tabelas transacionais da origem. O AIDP executa os três notebooks de forma sequencial, mantém as camadas Bronze e Silver no formato Delta e publica os produtos analíticos da camada Gold em um schema PostgreSQL.
 
