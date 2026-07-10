@@ -4,7 +4,7 @@
 	"tutorials": [
     {
       "title": "[OBRIGATÓRIO] Configuração do Ambiente de Laboratório",
-      "filename": "create-compartments"
+      "filename": "create-compartments/create-compartments.md"
     },
     {
       "title": "[AMARELO] Laboratório 1 - Oracle 23ai Vector Search + APEX: Configure seu Banco Vetorial para Análises Avançadas",
