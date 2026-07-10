@@ -4,7 +4,7 @@
 	"tutorials": [
     {
       "title": "[OBRIGATÓRIO] Configuração do Ambiente de Laboratório",
-      "filename": "https://github.com/oracle-livelabs/oci/tree/main/oci-fast-track/create-compartments"
+      "filename": "create-compartments"
     },
     {
       "title": "[AMARELO] Laboratório 1 - Oracle 23ai Vector Search + APEX: Configure seu Banco Vetorial para Análises Avançadas",
