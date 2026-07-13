@@ -13,6 +13,10 @@
     {
       "title": "Criando a Rede na Oracle Cloud (VCN)",
       "filename": "create-vcn/create-vcn.md"
+    },
+    {
+      "title": "Criando um OCI Database with PostgreSQL",
+      "filename": "create-postgresql/create-postgresql.md"
     }
   ]
 }

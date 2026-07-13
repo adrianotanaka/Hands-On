@@ -12,7 +12,7 @@ Durante a execução, você conhecerá os principais componentes de infraestrutu
 
 Ao concluir este laboratório, você será capaz de:
 
-1. Dia 1
+- Dia 1
     - compreender como o PostgreSQL atua como origem transacional e destino da camada Gold;
     - criar um compartimento para organizar e isolar os recursos utilizados no laboratório;
     - configurar uma Virtual Cloud Network (VCN) para suportar a comunicação entre os componentes da solução;
@@ -21,7 +21,7 @@ Ao concluir este laboratório, você será capaz de:
     - compreender a arquitetura do AIDP;
     - criar um workspace no AIDP;
     - criar um cluster compute no workspace criado.
-2. Dia 2
+- Dia 2
     - conectar o AIDP ao PostgreSQL por meio de JDBC;
     - ingerir tabelas da origem e armazená-las no formato Delta na camada Bronze;
     - utilizar PySpark para limpar, padronizar, relacionar e enriquecer os dados;
@@ -116,3 +116,8 @@ O terceiro notebook utiliza as dimensões e fatos Silver para calcular indicador
 A conexão com o PostgreSQL utiliza variáveis de ambiente, sem credenciais fixas nos notebooks. O driver JDBC utilizado é o PostgreSQL `42.7.4`. Cada notebook retorna um payload JSON ao final da execução e não encerra a sessão Spark, permitindo o uso compartilhado do cluster no Workbench.
 
 Ao final, você terá construído um pipeline de dados de ponta a ponta: da captura dos dados operacionais até a disponibilização de informações consolidadas sobre vendas, clientes, estoque, pedidos, produtos e indicadores financeiros.
+
+## Autoria
+
+- **Autores** - Adriano Tanaka, Fábio Silva
+- **Último Updated Por/Data** - Fábio Silva, Jul/2026
