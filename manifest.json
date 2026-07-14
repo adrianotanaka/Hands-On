@@ -21,6 +21,10 @@
     {
       "title": "Criando um Oracle AI Data Platform Workbench",
       "filename": "create-aidp/create-aidp.md"
+    },
+	{
+      "title": "Agendando tarefas",
+	  "filename": "create-workflow/workflow.md"
     }
   ]
 }
