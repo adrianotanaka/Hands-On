@@ -27,7 +27,7 @@ Ao concluir este laboratório, você será capaz de:
 ## Tarefa 1: criar o job
 
 1. No menu lateral do seu workspace, clique em **Workflow**.
-2. Na aba **Jobs**, clique em **Create job**.
+2. Na aba **Jobs**, clique em **Create job** (Ou no sinal de +).
 
     ![Página Workflow com o botão Create job](images/workflow1.png)
 
@@ -49,9 +49,9 @@ Ao concluir este laboratório, você será capaz de:
 1. Na aba **Tasks**, clique em **Add task**.
 2. No painel **Task details**, informe um nome descritivo, como `bronze_ingestao_postgresql_delta`.
 3. Em **Task type**, selecione **Notebook task**.
-4. Em **Source**, mantenha **Workspace** e clique em **Browse** para selecionar o notebook correspondente.
-5. Escolha o **Cluster** que executará o notebook.
-6. Se aplicável, configure **Execution timeout**, **Retries** e **Retry on timeout**.
+4. Em **Source**, mantenha **Workspace** e clique em **Browse** para selecionar o notebook correspondente, aqui você também pode escolher arquivos que estão em um GitFolder.
+5. Escolha o **Cluster** que executará o notebook, cada Task(ou Step) pode ser vinculada a um cluster diferente.
+6. Se aplicável, configure **Execution timeout**, **Retries** e **Retry on timeout**, se for uma tarefa de ingestão continua você pode marcar a opção de Streaming.
 
     ![Configuração de uma tarefa do tipo Notebook task](images/workflow3.png)
 
