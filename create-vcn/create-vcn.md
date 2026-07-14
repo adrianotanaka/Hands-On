@@ -14,7 +14,7 @@ Neste Lab você vai aprender a provisiona uma Virtual Cloud Network (VCN) com ac
 
 * Criar uma Virtual Cloud Network (VCN)
 
-## Task 1: Criar uma VCN (Virtual Cloud Network)
+## Tarefa 1: Criar uma VCN (Virtual Cloud Network)
 
 1.	No menu principal, clique em "Networking" e escolha "Virtual Cloud Networks"
 

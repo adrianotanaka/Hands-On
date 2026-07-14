@@ -46,7 +46,7 @@ Neste Lab você vai aprender a criar um Compartimento dentro da Oracle Cloud Inf
 * Criar um Compartimento
 
 
-## Task 1: Acesse a Console da Oracle Cloud
+## Tarefa 1: Acesse a Console da Oracle Cloud
 
 1.	No navegador de sua preferência, digite: [https://cloud.oracle.com ](https://cloud.oracle.com )
 
@@ -66,7 +66,7 @@ Neste Lab você vai aprender a criar um Compartimento dentro da Oracle Cloud Inf
 
 ![menu principal](./images/compartment-menu-5.png)
 
-## Task 2: Criando Compartimentos
+## Tarefa 2: Criando Compartimentos
 
 1.	No menu principal, clique em "Identity & Security" e escolha "Compartments"
 

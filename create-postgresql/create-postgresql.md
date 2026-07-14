@@ -14,7 +14,7 @@ No contexto deste laboratório, o PostgreSQL será utilizado como base para arma
 
 * Criar um OCI Database with PostgreSQL
 
-## Task 1: Criar um OCI Database with PostgreSQL
+## Tarefa 1: Criar um OCI Database with PostgreSQL
 
 Siga a sequência abaixo para criar o serviço **OCI Database with PostgreSQL** pela Console da OCI.
 

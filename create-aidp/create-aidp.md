@@ -17,7 +17,7 @@ No contexto deste laboratório, o AIDP será o ambiente central de processamento
 * Criar um cluster compute para execução dos notebooks
 * Preparar o AIDP para o fluxo de ingestão, transformação e publicação dos dados
 
-## Task 1: Criar um Oracle AI Data Platform Workbench
+## Tarefa 1: Criar um Oracle AI Data Platform Workbench
 
 Siga a sequência abaixo para criar o **Oracle AI Data Platform Workbench** pela Console da OCI.
 
@@ -57,7 +57,7 @@ Siga a sequência abaixo para criar o **Oracle AI Data Platform Workbench** pela
 
 ![Detalhes do Workbench e work requests](images/009.png)
 
-## Task 2: Criar workspace
+## Tarefa 2: Criar workspace
 
 1. Na lista de **AI Data Platform Workbenches**, confirme que o Workbench está com status **Active** e acesse o recurso criado.
 
@@ -84,7 +84,7 @@ Siga a sequência abaixo para criar o **Oracle AI Data Platform Workbench** pela
     ![Workspace ativo](images/015.png)
 
 
-## Task 3: Criar cluster compute
+## Tarefa 3: Criar cluster compute
 
 1. No menu lateral do workspace, selecione **Compute**.
 

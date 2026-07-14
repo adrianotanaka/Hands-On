@@ -50,7 +50,7 @@ Ao concluir este laboratório, você será capaz de:
 2. No painel **Task details**, informe um nome descritivo, como `bronze_ingestao_postgresql_delta`.
 3. Em **Task type**, selecione **Notebook task**.
 4. Em **Source**, mantenha **Workspace** e clique em **Browse** para selecionar o notebook correspondente, aqui você também pode escolher arquivos que estão em um GitFolder.
-5. Escolha o **Cluster** que executará o notebook, cada Task(ou Step) pode ser vinculada a um cluster diferente.
+5. Escolha o **Cluster** que executará o notebook, cada tarefa (ou step) pode ser vinculada a um cluster diferente.
 6. Se aplicável, configure **Execution timeout**, **Retries** e **Retry on timeout**, se for uma tarefa de ingestão continua você pode marcar a opção de Streaming.
 
     ![Configuração de uma tarefa do tipo Notebook task](images/workflow3.png)
