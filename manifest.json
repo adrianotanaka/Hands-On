@@ -23,6 +23,10 @@
       "filename": "create-aidp/create-aidp.md"
     },
     {
+      "title": "[Dia 2] - Carregando dados fictícios no OCI PostgreSQL",
+      "filename": "create-data/create-data.md"
+    },
+    {
       "title": "[Dia 2] - Trabalhando com Python Notebooks",
       "filename": "python-notebooks/notebooks.md"
     },
