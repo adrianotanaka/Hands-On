@@ -72,6 +72,31 @@ Ao final você deve ter: 1 VCN, 2 sub-redes regionais (pública e privada), 1 In
 
 Você pode **seguir para o próximo Lab**.
 
+## Tarefa 2: Liberando portas
+
+Nesta tarefa, você adicionará regras de entrada nas *security lists* criadas para as sub-redes privada e pública.
+
+1. Na página de detalhes da VCN, clique em **Security Lists**.
+2. Abra a security list associada à sub-rede privada (**Private Security List**).
+3. Em **Ingress Rules**, clique em **Add Ingress Rules** e crie uma regra com os seguintes valores:
+
+   * **Source CIDR:** `10.0.0.0/16`
+   * **IP Protocol:** `All Protocols`
+![Security List Privada](./images/sec-list-private.png)
+
+4. Clique em **Add Ingress Rules** para salvar a regra. Ela permite a comunicação por todos os protocolos entre recursos dentro do intervalo de endereços da VCN.
+5. Volte para a lista de security lists e abra a security list associada à sub-rede pública (**Public Security List**).
+6. Em **Ingress Rules**, clique em **Add Ingress Rules** e crie uma regra com os seguintes valores:
+
+   * **Source CIDR:** `0.0.0.0/0`
+   * **IP Protocol:** `TCP`
+   * **Destination Port Range:** `80`
+![Security List Publica](./images/sec-list-public.png)
+
+7. Clique em **Add Ingress Rules** para salvar a regra. Essa configuração permite acessos HTTP pela Internet a recursos na sub-rede pública.
+
+> **Importante:** a regra `0.0.0.0/0` libera acesso de qualquer origem. Utilize-a somente para a porta necessária e revise as regras antes de usar recursos em produção.
+
 ## Conclusão
 
 Nesta sessão você aprendeu a criar uma Virtual Cloud Network (VCN) na prática.
@@ -79,4 +104,4 @@ Nesta sessão você aprendeu a criar uma Virtual Cloud Network (VCN) na prática
 ## Autoria
 
 - **Autores** - Arthur Vianna, Luiz de Oliveira, Thais Henrique
-- **Último Updated Por/Data** - Arthur Vianna, Jul/2025
+- **Último Updated Por/Data** - Adriano Tanaka/2026
