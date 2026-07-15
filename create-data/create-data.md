@@ -101,7 +101,7 @@ Siga a sequência abaixo para instalar e configurar as ferramentas necessárias 
     firewall-cmd --reload
     ```
 
-4. Acesse a interface do pgAdmin para validar a conectividade com o PostgreSQL.
+4. Acesse a interface do pgAdmin para validar a conectividade com o PostgreSQL, use o e-mail e senha de quando rodou o script sudo /usr/pgadmin4/bin/setup-web.sh
 
     ![Tela de login do pgAdmin](images/015.png)
 
