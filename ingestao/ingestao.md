@@ -22,26 +22,7 @@ Você configurará as variáveis de ambiente no cluster compute, criará o catá
 
     ![Tela de Compute do workspace](images/001.png)
 
-    ```
-    AIDP_CATALOG = handson
-    BRONZE_SCHEMA = bronze
-    SILVER_SCHEMA = silver
-    BRONZE_WRITE_MODE = overwrite
-    SILVER_WRITE_MODE = overwrite
-    PG_HOST = primary.ceaph7dq.postgresql.us-phoenix-1.oci.oraclecloud.com
-    PG_PORT = 5432
-    PG_DB = handson
-    PG_SCHEMA = public
-    PG_USER = pgadmin
-    PG_SSLMODE = require
-    PG_GOLD_HOST = primary.ceaph7dq.postgresql.us-phoenix-1.oci.oraclecloud.com
-    PG_GOLD_PORT = 5432
-    PG_GOLD_DB = handson
-    PG_GOLD_SCHEMA = gold
-    PG_GOLD_USER = pgadmin
-    PG_GOLD_SSLMODE = require
-    PG_PASSWORD = XXXXXXXXXX
-    ```
+
 2. Abra o menu de ações do cluster para acessar as opções disponíveis.
 
     ![Menu de ações do cluster](images/002.png)
@@ -50,11 +31,32 @@ Você configurará as variáveis de ambiente no cluster compute, criará o catá
 
     ![Configuração das variáveis de ambiente do cluster](images/003.png)
 
-4. Após salvar as configurações, abra novamente o menu de ações do cluster e selecione a opção para iniciar o compute.
+    ```
+    AIDP_CATALOG = handson
+    BRONZE_SCHEMA = bronze
+    SILVER_SCHEMA = silver
+    BRONZE_WRITE_MODE = overwrite
+    SILVER_WRITE_MODE = overwrite
+    PG_HOST = ENDPOINT_DO_SEU_POSTGRESQL.oci.oraclecloud.com
+    PG_PORT = 5432
+    PG_DB = handson
+    PG_SCHEMA = public
+    PG_USER = pgadmin
+    PG_SSLMODE = require
+    PG_GOLD_HOST = ENDPOINT_DO_SEU_POSTGRESQL.oci.oraclecloud.com
+    PG_GOLD_PORT = 5432
+    PG_GOLD_DB = handson
+    PG_GOLD_SCHEMA = gold
+    PG_GOLD_USER = pgadmin
+    PG_GOLD_SSLMODE = require
+    PG_PASSWORD = SENHA_DO_SEU_POSTGRESQL
+    ```
+
+5. Após salvar as configurações, abra novamente o menu de ações do cluster e selecione a opção para iniciar o compute.
 
     ![Opção para iniciar o cluster](images/004.png)
 
-5. Aguarde até que o cluster entre em estado de inicialização ou execução antes de iniciar os notebooks.
+6. Aguarde até que o cluster entre em estado de inicialização ou execução antes de iniciar os notebooks.
 
     ![Cluster em inicialização](images/005.png)
 
